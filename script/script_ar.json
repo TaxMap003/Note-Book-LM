@@ -1,0 +1,1272 @@
+{
+  "title": "TCP M4: Financial Planning (Egyptian Arabic)",
+  "source": "input/original.mp4 (NotebookLM Video Overview, release v1: TCP_M4__Financial_Planning.mp4)",
+  "voice": "Nile TTS female (KickItLikeShika/NileTTS-XTTS)",
+  "glossary": [
+    {
+      "term": "Traditional (IRA / 401(k))",
+      "ar": "pre-tax contributions و taxable distributions: بتاخد deduction دلوقتي وبتدفع ordinary income tax بعدين"
+    },
+    {
+      "term": "Roth",
+      "ar": "after-tax contributions و tax-free distributions: مفيش deduction في الأول، بس الـ growth بيبقى tax-free"
+    },
+    {
+      "term": "Marginal tax rate",
+      "ar": "أهم fact في الاختيار: لو الـ current rates أعلى من الـ future rates ← Traditional، ولو العكس ← Roth"
+    },
+    {
+      "term": "Phase-out (IRA deduction)",
+      "ar": "لو فيه employer plan: Identify ← Excess ← Percentage ← Phase-out (مثال الفيديو: AGI $81,000، threshold $79,000، range $10,000 ← 20%)"
+    },
+    {
+      "term": "Required Minimum Distributions (RMDs)",
+      "ar": "بتنطبق على الـ Traditional IRAs والـ 401(k)s، ومش بتنطبق على الـ Roth IRAs"
+    },
+    {
+      "term": "10% early withdrawal penalty",
+      "ar": "على الـ distributions قبل سن 59½، إلا لو فيه exception زي الـ qualified medical expenses"
+    },
+    {
+      "term": "Exclusion ratio",
+      "ar": "الـ original investment ÷ الـ total expected return؛ والـ payment × الـ ratio = الـ tax-free portion، والباقي taxable income"
+    },
+    {
+      "term": "Systematic risk",
+      "ar": "بيأثر على الـ economy كلها (inflation، global events)، ومينفعش يتشال بالـ diversification"
+    },
+    {
+      "term": "Non-systematic risk",
+      "ar": "company-specific (زي استقالة الـ CEO)، وبيقل بالـ diversification"
+    },
+    {
+      "term": "After-tax rate of return",
+      "ar": "ROI × (1 − tax rate)، والـ tax rate = federal + state + net investment taxes"
+    },
+    {
+      "term": "Municipal bond interest",
+      "ar": "exempt من الـ federal income tax؛ الـ corporate bond interest fully taxable؛ قارن الـ after-tax yields"
+    },
+    {
+      "term": "Section 529 plan",
+      "ar": "مفيش age limit صارم؛ الـ unused funds ممكن تتعمل roll over لـ Roth IRA بعد 15 سنة؛ في الـ FAFSA بتتحسب parent asset لما الـ parent يملكها"
+    },
+    {
+      "term": "Coverdell account",
+      "ar": "الـ beneficiary أقل من 18 سنة، والـ contributions max $2,000 في السنة"
+    },
+    {
+      "term": "U.S. Series EE bonds",
+      "ar": "tax-exempt بس لو اتستخدمت في qualified education expenses"
+    },
+    {
+      "term": "UGMA / UTMA",
+      "ar": "الـ control of the asset بيتنقل للطفل عند الـ age of majority"
+    },
+    {
+      "term": "FAFSA: parent vs. student asset",
+      "ar": "parent asset لـ dependent student ← لحد 5.64%؛ independent student ← لحد 20%"
+    },
+    {
+      "term": "Risk transfer / reduction / retention / avoidance",
+      "ar": "high severity + low frequency ← transfer (insurance)؛ high frequency + low severity ← reduction أو retention؛ الاتنين high ← avoidance"
+    },
+    {
+      "term": "Term vs. permanent life insurance",
+      "ar": "الـ term: definite period والـ cash value صفر؛ الـ permanent: بيبني tax-deferred cash value وequity تقدر تستلف بضمانها"
+    },
+    {
+      "term": "Beneficiary designation / POD",
+      "ar": "دايماً بتغلب الـ will، والـ assets اللي عليها POD بتعدي الـ probate"
+    },
+    {
+      "term": "Probate avoidance ≠ tax avoidance",
+      "ar": "الـ asset بيفضل في الـ gross estate"
+    }
+  ],
+  "units": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.74,
+      "en": "Welcome to this explainer for the CPA-TCP M4 module.",
+      "parts": [
+        {
+          "ar": "أهلاً بيك في الـ explainer ده لموديول CPA TCP M4.",
+          "tts": "أهلاً بيك في الـ explainer ده لموديول سي بي إيه، تي سي بي، إم فور."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 3.98,
+      "end": 7.5,
+      "en": "Today, we're going to build your pattern recognition for personal financial planning.",
+      "parts": [
+        {
+          "ar": "النهارده هنبني عندك الـ pattern recognition في الـ Personal Financial Planning."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 7.7,
+      "end": 13.22,
+      "en": "We're keeping it strictly to simple English, but we'll use the exact official tax terminology you'll see on the exam.",
+      "parts": [
+        {
+          "ar": "هنتكلم بلغة بسيطة، بس هنستخدم الـ official tax terminology بالظبط زي ما هتشوفها في الامتحان."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 13.44,
+      "end": 20.92,
+      "en": "Our ultimate goal here? We want you to deeply understand these rules so you can confidently tackle multiple choice questions and task-based simulations.",
+      "parts": [
+        {
+          "ar": "هدفنا الأساسي إيه؟ عايزينك تفهم الـ rules دي فهم عميق،"
+        },
+        {
+          "ar": "عشان تحل الـ multiple choice questions والـ task-based simulations بثقة."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 21.38,
+      "end": 27.02,
+      "en": "We are focusing heavily on application, analysis, and those tricky calculations. So, let's dive right in.",
+      "parts": [
+        {
+          "ar": "هنركز جامد على الـ application والـ analysis، والـ calculations الصعبة دي. يلا بينا ندخل على طول."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 27.8,
+      "end": 30.66,
+      "en": "Here's our quick roadmap for today to keep everything super structured.",
+      "parts": [
+        {
+          "ar": "دي الـ roadmap السريعة بتاعة النهارده، عشان كل حاجة تبقى منظمة جداً."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 31.24,
+      "end": 35.78,
+      "en": "We're covering: 1. Retirement plans and annuities. 2. Risk and investment return.",
+      "parts": [
+        {
+          "ar": "هنغطي: 1. Retirement Plans and Annuities. 2. Risk and Investment Return.",
+          "tts": "هنغطي: واحد، Retirement Plans and Annuities. اتنين، Risk and Investment Return."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 36.34,
+      "end": 39.94,
+      "en": "3. Education funding options. 4. Insurance and risk mitigation.",
+      "parts": [
+        {
+          "ar": "3. Education Funding Options. 4. Insurance and Risk Mitigation.",
+          "tts": "تلاتة، Education Funding Options. أربعة، Insurance and Risk Mitigation."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 40.6,
+      "end": 45.92,
+      "en": "5. Estate planning asset transfers. And finally, 6. A rapid review for the final exam.",
+      "parts": [
+        {
+          "ar": "5. Estate Planning Asset Transfers. وأخيراً، 6. Rapid Review للـ final exam.",
+          "tts": "خمسة، Estate Planning Asset Transfers. وأخيراً، ستة، Rapid Review للـ final exam."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 47.1,
+      "end": 50.54,
+      "en": "Alright, let's jump right into Section 1, Retirement Plans and Annuities.",
+      "parts": [
+        {
+          "ar": "تمام، يلا ندخل على طول في الجزء الأول: Retirement Plans and Annuities."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 51.64,
+      "end": 55.3,
+      "en": "Let's start with a classic comparison, traditional versus Roth accounts.",
+      "parts": [
+        {
+          "ar": "هنبدأ بمقارنة classic: الـ Traditional accounts قصاد الـ Roth accounts."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 55.3,
+      "end": 60.64,
+      "en": "If you see this fact on the exam, pre-tax contributions and taxable distributions, think traditional.",
+      "parts": [
+        {
+          "ar": "لو شفت الـ fact ده في الامتحان: pre-tax contributions and taxable distributions، فكر على طول في الـ Traditional."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 60.88,
+      "end": 64.54,
+      "en": "You get a nice deduction now, but you're going to pay ordinary income tax later.",
+      "parts": [
+        {
+          "ar": "بتاخد deduction حلوة دلوقتي، بس هتدفع ordinary income tax بعدين."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 64.82,
+      "end": 69.76,
+      "en": "On the flip side, if you see after-tax contributions and tax-free distributions, think Roth.",
+      "parts": [
+        {
+          "ar": "وعلى الناحية التانية، لو شفت after-tax contributions and tax-free distributions، فكر في الـ Roth."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 70.02,
+      "end": 73.2,
+      "en": "There's no deduction up front, but you get that sweet tax-free growth.",
+      "parts": [
+        {
+          "ar": "مفيش deduction في الأول، بس بتاخد الـ tax-free growth الحلو ده."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "start": 73.58,
+      "end": 76.88,
+      "en": "So what fact matters most here? It's the marginal tax rate.",
+      "parts": [
+        {
+          "ar": "طب إيه أهم fact هنا؟ هو الـ marginal tax rate."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "start": 77.04,
+      "end": 80.4,
+      "en": "If current rates are higher than future rates, traditional is your best bet.",
+      "parts": [
+        {
+          "ar": "لو الـ current rates أعلى من الـ future rates، يبقى الـ Traditional هو أحسن اختيار ليك."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "start": 80.52,
+      "end": 83.34,
+      "en": "But if future rates are higher, Roth is definitely the way to go.",
+      "parts": [
+        {
+          "ar": "لكن لو الـ future rates هي الأعلى، يبقى الـ Roth أكيد هو الطريق الصح."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "start": 84.08,
+      "end": 89.52,
+      "en": "Now, here's a huge exam trigger. A taxpayer with an employer plan wants an IRA deduction.",
+      "parts": [
+        {
+          "ar": "دلوقتي، ده exam trigger مهم جداً: عندك taxpayer عنده employer plan، وعايز ياخد IRA deduction.",
+          "tts": "دلوقتي، ده exam trigger مهم جداً: عندك taxpayer عنده employer plan، وعايز ياخد آي آر إيه deduction."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "start": 89.78,
+      "end": 92.72,
+      "en": "You absolutely must calculate the phase-out.",
+      "parts": [
+        {
+          "ar": "لازم وحتماً تحسب الـ phase-out."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "start": 92.84,
+      "end": 95.88,
+      "en": "Don't just guess. Walk through these exact logical steps.",
+      "parts": [
+        {
+          "ar": "متخمنش وخلاص. امشي على الـ logical steps دي بالظبط."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "start": 96.32,
+      "end": 99.74,
+      "en": "Let's say we have a single taxpayer with an AGI of $81,000.",
+      "parts": [
+        {
+          "ar": "نفترض إن عندنا single taxpayer، والـ AGI بتاعه $81,000.",
+          "tts": "نفترض إن عندنا single taxpayer، والـ إيه جي آي بتاعه واحد وتمانين ألف دولار."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "start": 100.14,
+      "end": 106.56,
+      "en": "Step one, identify the threshold. Let's assume the phase-out begins at $79,000 and has a $10,000 range.",
+      "parts": [
+        {
+          "ar": "الخطوة الأولى: حدد الـ threshold."
+        },
+        {
+          "ar": "هنفترض إن الـ phase-out بيبدأ عند $79,000، وليه range قيمته $10,000.",
+          "tts": "هنفترض إن الـ phase-out بيبدأ عند تسعة وسبعين ألف دولار، وليه range قيمته عشرة آلاف دولار."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "start": 106.56,
+      "end": 113.16,
+      "en": "Step two, calculate the excess. $81,000 minus $79,000 gives us a $2,000 excess.",
+      "parts": [
+        {
+          "ar": "الخطوة التانية: احسب الـ excess."
+        },
+        {
+          "ar": "$81,000 ناقص $79,000 يدينا excess قيمته $2,000.",
+          "tts": "واحد وتمانين ألف دولار ناقص تسعة وسبعين ألف دولار، يدينا excess قيمته ألفين دولار."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "start": 113.5,
+      "end": 119.54,
+      "en": "Step three, get the percentage. That $2,000 divided by the $10,000 range is 20%.",
+      "parts": [
+        {
+          "ar": "الخطوة التالتة: طلّع الـ percentage.",
+          "tts": "الخطوة التالتة: طلع الـ percentage."
+        },
+        {
+          "ar": "الـ $2,000 دول مقسومين على الـ range اللي هو $10,000، يطلعوا 20%.",
+          "tts": "الألفين دولار دول مقسومين على الـ range اللي هو عشرة آلاف دولار، يطلعوا عشرين في المية."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "start": 119.54,
+      "end": 128.62,
+      "en": "Finally, step four, multiply that 20% by the maximum allowed deduction and subtract that number from the limit. Boom, that is your final deduction amount.",
+      "parts": [
+        {
+          "ar": "وأخيراً، الخطوة الرابعة: اضرب الـ 20% دي في الـ maximum allowed deduction، واطرح الرقم ده من الـ limit.",
+          "tts": "وأخيراً، الخطوة الرابعة: اضرب العشرين في المية دي في الـ maximum allowed deduction، واطرح الرقم ده من الـ limit."
+        },
+        {
+          "ar": "وبس كده! ده هو الـ final deduction amount بتاعك."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "start": 129.5,
+      "end": 138.28,
+      "en": "Looking at the broader landscape of retirement plans, the main thing to remember is the difference in early withdrawal penalties and required minimum distributions, or RMDs.",
+      "parts": [
+        {
+          "ar": "ولو بصينا على الصورة الأكبر للـ retirement plans،"
+        },
+        {
+          "ar": "أهم حاجة تفتكرها هي الفرق في الـ early withdrawal penalties،"
+        },
+        {
+          "ar": "والـ required minimum distributions، أو الـ RMDs.",
+          "tts": "والـ required minimum distributions، أو الـ آر إم ديز."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "start": 138.48,
+      "end": 143.72,
+      "en": "If you see a distribution before age 59 and a half, instantly think of the 10% penalty.",
+      "parts": [
+        {
+          "ar": "لو شفت distribution قبل سن 59½، فكر على طول في الـ 10% penalty.",
+          "tts": "لو شفت distribution قبل سن تسعة وخمسين ونص، فكر على طول في الـ penalty بتاعة العشرة في المية."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "start": 143.9,
+      "end": 147.6,
+      "en": "But always, always check for exceptions, like qualified medical expenses.",
+      "parts": [
+        {
+          "ar": "بس دايماً، دايماً، دوّر على الـ exceptions، زي الـ qualified medical expenses.",
+          "tts": "بس دايماً، دايماً، دور على الـ exceptions، زي الـ qualified medical expenses."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "start": 147.96,
+      "end": 155.5,
+      "en": "And remember this golden rule. RMDs apply to traditional IRAs and 401(k)s, but they do not apply to Roth IRAs.",
+      "parts": [
+        {
+          "ar": "وافتكر الـ golden rule دي: الـ RMDs بتنطبق على الـ traditional IRAs والـ 401(k)s،",
+          "tts": "وافتكر الـ golden rule دي: الـ آر إم ديز بتنطبق على الـ traditional آي آر إيه والـ four oh one k،"
+        },
+        {
+          "ar": "لكن مش بتنطبق على الـ Roth IRAs.",
+          "tts": "لكن مش بتنطبق على الـ Roth آي آر إيه."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "start": 156.12,
+      "end": 162.1,
+      "en": "Moving on to annuities. If the exam asks you to calculate the taxable portion of an annuity, how do you do it?",
+      "parts": [
+        {
+          "ar": "نروح بقى للـ annuities. لو الامتحان طلب منك تحسب الـ taxable portion بتاع الـ annuity، تعملها إزاي؟"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "start": 162.16,
+      "end": 171.36,
+      "en": "You've got to use the exclusion ratio. Think of an annuity like it has two parts, a non-taxable return of your original investment and the taxable earnings.",
+      "parts": [
+        {
+          "ar": "لازم تستخدم الـ exclusion ratio. تخيل الـ annuity كإن ليها جزئين:"
+        },
+        {
+          "ar": "جزء non-taxable return of your original investment، يعني رجوع رأس مالك الأصلي من غير tax،"
+        },
+        {
+          "ar": "وجزء تاني هو الـ taxable earnings."
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "start": 171.74,
+      "end": 175.94,
+      "en": "Step one, divide your original investment by the total expected return.",
+      "parts": [
+        {
+          "ar": "الخطوة الأولى: اقسم الـ original investment بتاعك على الـ total expected return."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "start": 176.16,
+      "end": 181.46,
+      "en": "That gives you the exclusion ratio. Step two, multiply your payment by this ratio.",
+      "parts": [
+        {
+          "ar": "ده بيديك الـ exclusion ratio. الخطوة التانية: اضرب الـ payment بتاعك في الـ ratio ده."
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "start": 181.66,
+      "end": 187.06,
+      "en": "This chunk is your tax-free portion. Whatever's left over, that's your taxable income. Simple as that.",
+      "parts": [
+        {
+          "ar": "الجزء ده هو الـ tax-free portion بتاعك."
+        },
+        {
+          "ar": "وأي حاجة فاضلة، دي الـ taxable income بتاعك. بالبساطة دي."
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "start": 187.78,
+      "end": 191.84,
+      "en": "Okay, let's switch gears and move to Section 2, risk and investment return.",
+      "parts": [
+        {
+          "ar": "تمام، يلا نغير الموضوع ونروح على الجزء التاني: Risk and Investment Return."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "start": 191.84,
+      "end": 194.66,
+      "en": "Which rule applies when evaluating risk?",
+      "parts": [
+        {
+          "ar": "أنهي rule بتنطبق لما بنقيّم الـ risk؟",
+          "tts": "أنهي rule بتنطبق لما بنقيم الـ risk؟"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "start": 195.08,
+      "end": 197.86,
+      "en": "Well, systematic risk affects the whole economy.",
+      "parts": [
+        {
+          "ar": "بص، الـ systematic risk بيأثر على الـ economy كلها."
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "start": 198.06,
+      "end": 201.58,
+      "en": "Think about it like a rising tide. You simply cannot diversify it away.",
+      "parts": [
+        {
+          "ar": "فكر فيه زي الـ rising tide، المد اللي بيعلى على الكل."
+        },
+        {
+          "ar": "ببساطة، مينفعش تشيله بالـ diversification."
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "start": 202.2,
+      "end": 207.86,
+      "en": "Non-systematic risk, however, is company-specific, meaning you actually can reduce it through diversification.",
+      "parts": [
+        {
+          "ar": "أما الـ non-systematic risk، فهو company-specific،"
+        },
+        {
+          "ar": "يعني تقدر فعلاً تقلله عن طريق الـ diversification."
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "start": 208.2,
+      "end": 213.24,
+      "en": "So for an exam trigger, if you see inflation or global events, that's systematic.",
+      "parts": [
+        {
+          "ar": "فكـ exam trigger: لو شفت inflation أو global events، يبقى ده systematic."
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "start": 213.54,
+      "end": 217.54,
+      "en": "But if a CEO unexpectedly resigns, that's totally non-systematic.",
+      "parts": [
+        {
+          "ar": "لكن لو الـ CEO استقال فجأة، يبقى ده non-systematic تماماً.",
+          "tts": "لكن لو الـ سي إي أو استقال فجأة، يبقى ده non-systematic تماماً."
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "start": 218.26,
+      "end": 223.26,
+      "en": "Here's a crucial trap to avoid. A higher pre-tax return is not always the better choice.",
+      "parts": [
+        {
+          "ar": "ودي trap مهمة لازم تتجنبها: الـ pre-tax return الأعلى مش دايماً هو الاختيار الأحسن."
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "start": 223.38,
+      "end": 226.66,
+      "en": "You absolutely must calculate the after-tax rate of return.",
+      "parts": [
+        {
+          "ar": "لازم وحتماً تحسب الـ after-tax rate of return."
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "start": 227.32,
+      "end": 232.2,
+      "en": "Step one, calculate your initial ROI, which is just your gain divided by your cost.",
+      "parts": [
+        {
+          "ar": "الخطوة الأولى: احسب الـ initial ROI، اللي هو ببساطة الـ gain مقسوم على الـ cost.",
+          "tts": "الخطوة الأولى: احسب الـ initial آر أو آي، اللي هو ببساطة الـ gain مقسوم على الـ cost."
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "start": 232.52,
+      "end": 235.7,
+      "en": "Step two, figure out the total applicable tax rate.",
+      "parts": [
+        {
+          "ar": "الخطوة التانية: حدد الـ total applicable tax rate."
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "start": 235.8,
+      "end": 239.4,
+      "en": "Make sure to add up federal, state, and net investment taxes.",
+      "parts": [
+        {
+          "ar": "واتأكد إنك تجمع الـ federal والـ state والـ net investment taxes."
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "start": 239.88,
+      "end": 246.5,
+      "en": "Step three, multiply your ROI by one minus the tax rate. This reveals what you actually get to keep in your pocket.",
+      "parts": [
+        {
+          "ar": "الخطوة التالتة: اضرب الـ ROI في (1 ناقص الـ tax rate).",
+          "tts": "الخطوة التالتة: اضرب الـ آر أو آي في واحد ناقص الـ tax rate."
+        },
+        {
+          "ar": "ده بيوريك اللي هيفضل في جيبك فعلاً."
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "start": 247.54,
+      "end": 252.52,
+      "en": "Now, what fact matters most when you're choosing between corporate bonds and municipal bonds?",
+      "parts": [
+        {
+          "ar": "طب، إيه أهم fact لما تختار بين الـ corporate bonds والـ municipal bonds؟"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "start": 252.98,
+      "end": 257.58,
+      "en": "Think about it for a second. It all comes down to the taxpayer's income tax bracket.",
+      "parts": [
+        {
+          "ar": "فكر فيها ثانية. الموضوع كله بيرجع للـ income tax bracket بتاع الـ taxpayer."
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "start": 258.36,
+      "end": 265.92,
+      "en": "A high-income taxpayer. Municipal bond interest is completely exempt from federal income tax, whereas corporate bond interest is fully taxable.",
+      "parts": [
+        {
+          "ar": "خد عندك high-income taxpayer: الـ municipal bond interest بيبقى exempt تماماً من الـ federal income tax،"
+        },
+        {
+          "ar": "في حين إن الـ corporate bond interest بيبقى fully taxable."
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "start": 266.18,
+      "end": 275.12,
+      "en": "So for a really high earner, a 4% municipal bond might actually give a much higher after-tax rate of return than a 6% corporate bond.",
+      "parts": [
+        {
+          "ar": "فبالنسبة لحد دخله عالي جداً، الـ municipal bond اللي بـ 4%",
+          "tts": "فبالنسبة لحد دخله عالي جداً، الـ municipal bond اللي بأربعة في المية"
+        },
+        {
+          "ar": "ممكن فعلاً يدي after-tax rate of return أعلى بكتير من الـ corporate bond اللي بـ 6%.",
+          "tts": "ممكن فعلاً يدي after-tax rate of return أعلى بكتير من الـ corporate bond اللي بستة في المية."
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "start": 275.12,
+      "end": 277.8,
+      "en": "You have to always compare those after-tax yields.",
+      "parts": [
+        {
+          "ar": "لازم دايماً تقارن الـ after-tax yields."
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "start": 278.64,
+      "end": 281.82,
+      "en": "All right, let's roll into Section 3, Education Funding Options.",
+      "parts": [
+        {
+          "ar": "تمام، يلا بينا على الجزء التالت: Education Funding Options."
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "start": 282.48,
+      "end": 286.18,
+      "en": "You really need to pay attention to the distinct limits and conditions here.",
+      "parts": [
+        {
+          "ar": "هنا لازم تركز أوي في الـ limits والـ conditions المختلفة."
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "start": 286.46,
+      "end": 295.74,
+      "en": "For Section 529 plans, there is no strict age limit, and unused funds actually have a potential to roll over to a Roth IRA after 15 years, which is an awesome feature.",
+      "parts": [
+        {
+          "ar": "في الـ Section 529 plans، مفيش age limit صارم،",
+          "tts": "في الـ Section five twenty-nine plans، مفيش age limit صارم،"
+        },
+        {
+          "ar": "والـ unused funds عندها potential إنها تتعمل roll over لـ Roth IRA بعد 15 سنة،",
+          "tts": "والـ unused funds عندها potential إنها تتعمل roll over لـ Roth آي آر إيه بعد خمستاشر سنة،"
+        },
+        {
+          "ar": "ودي feature جامدة جداً."
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "start": 296.54,
+      "end": 304.2,
+      "en": "Coverdell accounts, though, much stricter. The beneficiary must be under 18, and contributions are hard-capped at just $2,000 a year.",
+      "parts": [
+        {
+          "ar": "أما الـ Coverdell accounts، فأشد بكتير."
+        },
+        {
+          "ar": "الـ beneficiary لازم يكون أقل من 18 سنة، والـ contributions عليها hard cap عند $2,000 بس في السنة.",
+          "tts": "الـ beneficiary لازم يكون أقل من تمنتاشر سنة، والـ contributions عليها hard cap عند ألفين دولار بس في السنة."
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "start": 304.2,
+      "end": 311.16,
+      "en": "Then you have U.S. Series EE bonds, which are tax-exempt only if they're used for qualified education expenses.",
+      "parts": [
+        {
+          "ar": "وبعدين عندك الـ U.S. Series EE bonds،",
+          "tts": "وبعدين عندك الـ يو إس Series إي إي bonds،"
+        },
+        {
+          "ar": "ودي بتبقى tax-exempt بس لو اتستخدمت في الـ qualified education expenses."
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "start": 311.74,
+      "end": 319.42,
+      "en": "Finally, UGMA or UTMA accounts. The big thing there is that control of the asset transfers completely to the child at the age of majority.",
+      "parts": [
+        {
+          "ar": "وأخيراً، الـ UGMA أو الـ UTMA accounts."
+        },
+        {
+          "ar": "أهم حاجة فيهم إن الـ control of the asset بيتنقل بالكامل للطفل عند الـ age of majority."
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "start": 320.18,
+      "end": 324.24,
+      "en": "Let's look at a really common exam trap regarding federal student financial aid.",
+      "parts": [
+        {
+          "ar": "خلينا نشوف exam trap مشهورة جداً بخصوص الـ federal student financial aid."
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "start": 324.38,
+      "end": 329.32,
+      "en": "On the FAFSA, are 529 plans considered a student asset or a parent asset?",
+      "parts": [
+        {
+          "ar": "في الـ FAFSA، هل الـ 529 plans بتتحسب student asset ولا parent asset؟",
+          "tts": "في الـ FAFSA، هل الـ five twenty-nine plans بتتحسب student asset ولا parent asset؟"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "start": 329.32,
+      "end": 334.66,
+      "en": "The main thing to remember is that student assets heavily penalize financial aid eligibility.",
+      "parts": [
+        {
+          "ar": "أهم حاجة تفتكرها إن الـ student assets بتأثر بالسلب جامد على الـ financial aid eligibility."
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "start": 335.0,
+      "end": 341.86,
+      "en": "If a parent owns the 529 for a dependent student, FAFSA only expects up to 5.64% of it to be used for college.",
+      "parts": [
+        {
+          "ar": "لو الـ parent هو اللي بيملك الـ 529 لـ dependent student،",
+          "tts": "لو الـ parent هو اللي بيملك الـ five twenty-nine لـ dependent student،"
+        },
+        {
+          "ar": "الـ FAFSA بتتوقع إن بس لحد 5.64% منها يتصرف على الكلية.",
+          "tts": "الـ FAFSA بتتوقع إن بس لحد خمسة فاصلة أربعة وستين في المية منها يتصرف على الكلية."
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "start": 342.06,
+      "end": 346.84,
+      "en": "But if an independent student owns it, FAFSA expects up to 20% to be used.",
+      "parts": [
+        {
+          "ar": "لكن لو الـ independent student هو اللي بيملكها، الـ FAFSA بتتوقع إن لحد 20% تتصرف.",
+          "tts": "لكن لو الـ independent student هو اللي بيملكها، الـ FAFSA بتتوقع إن لحد عشرين في المية تتصرف."
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "start": 347.06,
+      "end": 350.3,
+      "en": "Who owns the account changes the financial aid package entirely.",
+      "parts": [
+        {
+          "ar": "مين اللي بيملك الـ account بيغير الـ financial aid package بالكامل."
+        }
+      ]
+    },
+    {
+      "id": 66,
+      "start": 351.24,
+      "end": 355.32,
+      "en": "Moving right along, here is Section 4, Insurance and Risk Mitigation.",
+      "parts": [
+        {
+          "ar": "نكمل، وده الجزء الرابع: Insurance and Risk Mitigation."
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "start": 355.9,
+      "end": 360.92,
+      "en": "Whenever you see risk questions, instantly use this frequency and severity grid in your head.",
+      "parts": [
+        {
+          "ar": "أي وقت تشوف risk questions، استخدم على طول الـ frequency and severity grid دي في دماغك."
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "start": 361.02,
+      "end": 366.8,
+      "en": "If you see a fact pattern with high severity but low frequency, like a house fire, think risk transfer.",
+      "parts": [
+        {
+          "ar": "لو شفت fact pattern فيه high severity بس low frequency، زي house fire، فكر في الـ risk transfer."
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "start": 367.02,
+      "end": 369.84,
+      "en": "You buy insurance. High frequency, low severity?",
+      "parts": [
+        {
+          "ar": "بتشتري insurance. طب لو high frequency و low severity؟"
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "start": 370.04,
+      "end": 373.9,
+      "en": "Think minor car scratches. That's risk reduction or risk retention.",
+      "parts": [
+        {
+          "ar": "فكر في minor car scratches، الخدوش البسيطة في العربية."
+        },
+        {
+          "ar": "ده risk reduction أو risk retention."
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "start": 374.26,
+      "end": 380.88,
+      "en": "And if something is both high frequency and high severity, that's risk avoidance. You simply do not participate in that activity.",
+      "parts": [
+        {
+          "ar": "ولو حاجة high frequency و high severity مع بعض، يبقى ده risk avoidance."
+        },
+        {
+          "ar": "ببساطة، مش بتشارك في النشاط ده أصلاً."
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "start": 381.14,
+      "end": 386.02,
+      "en": "You also need to clearly distinguish term versus permanent life insurance.",
+      "parts": [
+        {
+          "ar": "ولازم كمان تفرق بوضوح بين الـ term life insurance والـ permanent life insurance."
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "start": 386.69,
+      "end": 390.7,
+      "en": "Term insurance covers a definite period and has literally zero cash value.",
+      "parts": [
+        {
+          "ar": "الـ term insurance بيغطي definite period، والـ cash value بتاعه صفر حرفياً."
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "start": 390.86,
+      "end": 396.24,
+      "en": "It's kind of like renting an apartment. Permanent insurance, however, builds tax-deferred cash value.",
+      "parts": [
+        {
+          "ar": "كإنك بتأجر شقة. أما الـ permanent insurance، فبيبني tax-deferred cash value."
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "start": 396.4,
+      "end": 401.52,
+      "en": "It's more like owning a home. Part of your premium actually builds equity that you can borrow against later on.",
+      "parts": [
+        {
+          "ar": "ده أقرب لإنك تمتلك بيت."
+        },
+        {
+          "ar": "جزء من الـ premium بتاعك بيبني equity فعلاً، تقدر تستلف بضمانها بعدين."
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "start": 402.22,
+      "end": 405.58,
+      "en": "Let's dive into Section 5, estate planning asset transfers.",
+      "parts": [
+        {
+          "ar": "يلا ندخل على الجزء الخامس: Estate Planning Asset Transfers."
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "start": 406.7,
+      "end": 408.94,
+      "en": "Beneficiary designations always beat a will.",
+      "parts": [
+        {
+          "ar": "الـ beneficiary designations دايماً بتغلب الـ will."
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "start": 409.08,
+      "end": 413.16,
+      "en": "Assets labeled payable on death, or POD, bypass probate entirely.",
+      "parts": [
+        {
+          "ar": "الـ assets اللي عليها payable on death، أو POD، بتعدي الـ probate بالكامل.",
+          "tts": "الـ assets اللي عليها payable on death، أو بي أو دي، بتعدي الـ probate بالكامل."
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "start": 413.46,
+      "end": 420.18,
+      "en": "So if a will says the son gets the money, but the POD designation says the daughter, the daughter gets it. End of story.",
+      "parts": [
+        {
+          "ar": "فلو الـ will بيقول إن الابن ياخد الفلوس،"
+        },
+        {
+          "ar": "بس الـ POD designation بيقول البنت، يبقى البنت هي اللي تاخدها. وخلصت الحكاية.",
+          "tts": "بس الـ بي أو دي designation بيقول البنت، يبقى البنت هي اللي تاخدها. وخلصت الحكاية."
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "start": 420.38,
+      "end": 426.54,
+      "en": "But watch out for this massive exam trap: bypassing probate does not mean bypassing taxes.",
+      "parts": [
+        {
+          "ar": "بس خد بالك من الـ exam trap الكبيرة دي:"
+        },
+        {
+          "ar": "إنك تعدي الـ probate مش معناه إنك تعدي الـ taxes."
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "start": 426.9,
+      "end": 432.16,
+      "en": "Probate avoidance is not tax avoidance. The asset still remains firmly in the gross estate.",
+      "parts": [
+        {
+          "ar": "الـ probate avoidance مش tax avoidance."
+        },
+        {
+          "ar": "الـ asset لسه موجود وثابت في الـ gross estate."
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "start": 432.38,
+      "end": 437.28,
+      "en": "And finally, let's wrap things up with Section 6, Final Exam Rapid Review.",
+      "parts": [
+        {
+          "ar": "وأخيراً، يلا نختم بالجزء السادس: Final Exam Rapid Review."
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "start": 438.38,
+      "end": 447.34,
+      "en": "Let's test your pattern recognition. A 45-year-old single taxpayer participates in an employer 401(k) and wants to deduct a traditional IRA contribution.",
+      "parts": [
+        {
+          "ar": "يلا نختبر الـ pattern recognition بتاعك."
+        },
+        {
+          "ar": "عندنا single taxpayer عنده 45 سنة، مشترك في employer 401(k)،",
+          "tts": "عندنا single taxpayer عنده خمسة وأربعين سنة، مشترك في employer four oh one k،"
+        },
+        {
+          "ar": "وعايز يعمل deduct لـ traditional IRA contribution.",
+          "tts": "وعايز يعمل deduct لـ traditional آي آر إيه contribution."
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "start": 447.96,
+      "end": 451.26,
+      "en": "Which rule applies here? Identify your exam triggers.",
+      "parts": [
+        {
+          "ar": "أنهي rule بتنطبق هنا؟ حدد الـ exam triggers بتاعتك."
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "start": 451.78,
+      "end": 454.4,
+      "en": "Fact one, they participate in an employer plan.",
+      "parts": [
+        {
+          "ar": "الـ fact الأول: هو مشترك في employer plan."
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "start": 454.64,
+      "end": 457.5,
+      "en": "Fact two, they want a traditional IRA deduction.",
+      "parts": [
+        {
+          "ar": "الـ fact التاني: هو عايز traditional IRA deduction.",
+          "tts": "الـ fact التاني: هو عايز traditional آي آر إيه deduction."
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "start": 458.72,
+      "end": 463.7,
+      "en": "The classic exam trap here is assuming that all traditional IRAs are fully deductible.",
+      "parts": [
+        {
+          "ar": "الـ classic exam trap هنا إنك تفترض إن كل الـ traditional IRAs بتبقى fully deductible.",
+          "tts": "الـ classic exam trap هنا إنك تفترض إن كل الـ traditional آي آر إيه بتبقى fully deductible."
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "start": 463.8,
+      "end": 470.14,
+      "en": "They aren't. Because this taxpayer has an employer plan, you absolutely must test the AGI phase-out limits.",
+      "parts": [
+        {
+          "ar": "لأ، مش كده. عشان الـ taxpayer ده عنده employer plan،"
+        },
+        {
+          "ar": "لازم وحتماً تختبر الـ AGI phase-out limits.",
+          "tts": "لازم وحتماً تختبر الـ إيه جي آي phase-out limits."
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "start": 470.34,
+      "end": 476.18,
+      "en": "If they had no employer plan whatsoever, they could take the full deduction, completely regardless of their income level.",
+      "parts": [
+        {
+          "ar": "لو ملوش أي employer plan خالص، كان يقدر ياخد الـ full deduction،"
+        },
+        {
+          "ar": "بغض النظر تماماً عن الـ income level بتاعه."
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "start": 476.94,
+      "end": 479.54,
+      "en": "Finally, the number 59 and a half.",
+      "parts": [
+        {
+          "ar": "وأخيراً، الرقم 59½.",
+          "tts": "وأخيراً، الرقم تسعة وخمسين ونص."
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "start": 479.78,
+      "end": 486.38,
+      "en": "Burn this exact age into your memory. It is the primary threshold for avoiding those nasty premature distribution penalties.",
+      "parts": [
+        {
+          "ar": "احفر السن ده بالظبط في دماغك."
+        },
+        {
+          "ar": "ده الـ primary threshold عشان تتجنب الـ premature distribution penalties الوحشة دي."
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "start": 486.8,
+      "end": 489.58,
+      "en": "As you prepare, don't just memorize the dollar limits.",
+      "parts": [
+        {
+          "ar": "وانت بتذاكر، متحفظش الـ dollar limits وبس."
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "start": 489.88,
+      "end": 494.74,
+      "en": "Master the logic. Always ask yourself why one alternative gives a better after-tax result.",
+      "parts": [
+        {
+          "ar": "افهم الـ logic كويس، واسأل نفسك دايماً: ليه alternative معين بيدي after-tax result أحسن؟"
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "start": 495.1,
+      "end": 498.92,
+      "en": "Are you ready to apply these exact rules on exam day to beat the CPA traps?",
+      "parts": [
+        {
+          "ar": "انت جاهز تطبق الـ rules دي بالظبط يوم الامتحان، وتغلب الـ CPA traps؟",
+          "tts": "انت جاهز تطبق الـ rules دي بالظبط يوم الامتحان، وتغلب الـ سي بي إيه traps؟"
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "start": 499.26,
+      "end": 502.34,
+      "en": "I know you are. Good luck with your practice questions, and keep at it.",
+      "parts": [
+        {
+          "ar": "أنا عارف إنك جاهز. بالتوفيق في الـ practice questions، وكمل على كده."
+        }
+      ]
+    }
+  ]
+}

@@ -9,3 +9,6 @@ dubbing/models/
 
 # Intermediate pipeline output (re-created by the scripts)
 work/
+
+# Source videos are attached to GitHub releases, not committed
+input/*.mp4

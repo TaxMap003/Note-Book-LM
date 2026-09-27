@@ -13,7 +13,7 @@ import re
 import tempfile
 from pathlib import Path
 
-from common import MODELS, REPO, WORK, run, save_json
+from common import MODELS, REPO, WORK, load_json, run, save_json
 
 # Biases Whisper toward the spelling of exam vocabulary without dictating content.
 TAX_PROMPT = (
@@ -37,7 +37,9 @@ def transcribe(video: Path, model_dir: Path, beam_size: int) -> dict:
             beam_size=beam_size,
             word_timestamps=True,
             vad_filter=False,
-            condition_on_previous_text=True,
+            # conditioning on previous text let one garbled window derail the rest of the run
+            condition_on_previous_text=False,
+            hallucination_silence_threshold=2.0,
             initial_prompt=TAX_PROMPT,
         )
         out = []
@@ -61,14 +63,16 @@ def build_units(transcript: dict, min_len: float, max_len: float) -> list[dict]:
         sentences.append(current)
 
     def split_long(sent):
-        if sent[-1]["end"] - sent[0]["start"] <= max_len:
+        if sent[-1]["end"] - sent[0]["start"] <= max_len or len(sent) < 2:
             return [sent]
         # split at the comma closest to the middle, recursively
         mid = (sent[0]["start"] + sent[-1]["end"]) / 2
         cuts = [i for i, w in enumerate(sent[:-1]) if w["word"].strip().endswith((",", ";", ":"))]
-        if not cuts:
-            return [sent]
-        i = min(cuts, key=lambda k: abs(sent[k]["end"] - mid))
+        if cuts:
+            i = min(cuts, key=lambda k: abs(sent[k]["end"] - mid))
+        else:
+            # Whisper sometimes drops punctuation; the longest pause is the likeliest sentence break
+            i = max(range(len(sent) - 1), key=lambda k: sent[k + 1]["start"] - sent[k]["end"])
         return split_long(sent[: i + 1]) + split_long(sent[i + 1 :])
 
     pieces = [p for s in sentences for p in split_long(s)]
@@ -97,15 +101,21 @@ def write_markdown(transcript: dict, units: list[dict], path: Path) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--video", type=Path, required=True)
+    ap.add_argument("--video", type=Path)
+    ap.add_argument("--from-json", type=Path, help="rebuild units from a saved transcript_en.json instead of running Whisper")
     ap.add_argument("--model", type=Path, default=MODELS / "faster-whisper-large-v3")
     ap.add_argument("--beam-size", type=int, default=5)
     ap.add_argument("--min-unit", type=float, default=2.5, help="merge sentences shorter than this (s)")
     ap.add_argument("--max-unit", type=float, default=14.0, help="split sentences longer than this (s)")
     args = ap.parse_args()
 
-    transcript = transcribe(args.video, args.model, args.beam_size)
-    save_json(transcript, WORK / "transcript_en.json")
+    if args.from_json:
+        transcript = load_json(args.from_json)
+    elif args.video:
+        transcript = transcribe(args.video, args.model, args.beam_size)
+        save_json(transcript, WORK / "transcript_en.json")
+    else:
+        ap.error("give --video (transcribe) or --from-json (rebuild units only)")
     units = build_units(transcript, args.min_unit, args.max_unit)
     save_json({"source": transcript["source"], "duration": transcript["duration"], "units": units}, REPO / "script" / "units_en.json")
     write_markdown(transcript, units, WORK / "transcript_en.md")

@@ -29,6 +29,16 @@ The Egyptian Arabic around the terms is natural teaching speech, for example:
 
 The spoken line must never contain digits, `$`, or `%`: Nile TTS (XTTS) would expand them into Modern Standard Arabic words («خمسون»), which is not Egyptian.
 
+## Acronyms in the spoken line
+
+A Whisper round-trip of Nile TTS output showed:
+
+- Multi-word English terms in Latin script come back exactly ("Exclusion Ratio", "Total Expected Return").
+- Letter acronyms in Latin script are read as words ("AGI" → «أجي», "IRAs" → "Iris"). Write them as Arabic letter names in `tts`: AGI «إيه جي آي», IRA «آي آر إيه», RMDs «آر إم ديز», ROI «آر أو آي», CPA «سي بي إيه», CEO «سي إي أو».
+- Acronyms said as words stay in Latin: FAFSA. Numbers said in English stay in Latin words: `five twenty-nine plan`, `four oh one k`.
+
+Subtitles (`ar`) always show the normal English form (AGI, IRA, 401(k)).
+
 ## Script format
 
 ```json

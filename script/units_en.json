@@ -1,0 +1,692 @@
+{
+  "source": "input/original.mp4",
+  "duration": 506.218,
+  "units": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.74,
+      "en": "Welcome to this explainer for the CPA-TCP M4 module.",
+      "parts": []
+    },
+    {
+      "id": 2,
+      "start": 3.98,
+      "end": 7.5,
+      "en": "Today, we're going to build your pattern recognition for personal financial planning.",
+      "parts": []
+    },
+    {
+      "id": 3,
+      "start": 7.7,
+      "end": 13.22,
+      "en": "We're keeping it strictly to simple English, but we'll use the exact official tax terminology you'll see on the exam.",
+      "parts": []
+    },
+    {
+      "id": 4,
+      "start": 13.44,
+      "end": 20.92,
+      "en": "Our ultimate goal here? We want you to deeply understand these roles so you can confidently tackle multiple choice questions and task-based simulations.",
+      "parts": []
+    },
+    {
+      "id": 5,
+      "start": 21.38,
+      "end": 25.72,
+      "en": "We are focusing heavily on application, analysis, and those tricky calculations.",
+      "parts": []
+    },
+    {
+      "id": 6,
+      "start": 25.98,
+      "end": 31.06,
+      "en": "So, let's dive right in. Here's our quick roadmap for today to keep everything super structured.",
+      "parts": []
+    },
+    {
+      "id": 7,
+      "start": 31.24,
+      "end": 33.96,
+      "en": "We're covering 1. Retirement plans and annuities.",
+      "parts": []
+    },
+    {
+      "id": 8,
+      "start": 34.16,
+      "end": 36.88,
+      "en": "2. Risk and investment return. 3.",
+      "parts": []
+    },
+    {
+      "id": 9,
+      "start": 37.06,
+      "end": 40.26,
+      "en": "Education funding options. 4. Insurance and risk mitigation.",
+      "parts": []
+    },
+    {
+      "id": 10,
+      "start": 40.6,
+      "end": 44.44,
+      "en": "5. Estate planning asset transfers. And finally, 6.",
+      "parts": []
+    },
+    {
+      "id": 11,
+      "start": 44.62,
+      "end": 50.84,
+      "en": "A rapid review for the final exam. Alright, let's jump right into Section 1, Retirement Plans and Annuities.",
+      "parts": []
+    },
+    {
+      "id": 12,
+      "start": 51.64,
+      "end": 55.3,
+      "en": "Let's start with a classic comparison, traditional versus Roth accounts.",
+      "parts": []
+    },
+    {
+      "id": 13,
+      "start": 55.3,
+      "end": 60.64,
+      "en": "accounts. If you see this fact on the exam, pre-tax contributions and taxable distributions, think traditional.",
+      "parts": []
+    },
+    {
+      "id": 14,
+      "start": 60.88,
+      "end": 64.54,
+      "en": "You get a nice deduction now, but you're going to pay ordinary income tax later.",
+      "parts": []
+    },
+    {
+      "id": 15,
+      "start": 64.82,
+      "end": 69.76,
+      "en": "On the flip side, if you see after-tax contributions and tax-free distributions, think Roth.",
+      "parts": []
+    },
+    {
+      "id": 16,
+      "start": 70.02,
+      "end": 73.2,
+      "en": "There's no deduction up front, but you get that sweet tax-free growth.",
+      "parts": []
+    },
+    {
+      "id": 17,
+      "start": 73.58,
+      "end": 76.88,
+      "en": "So what fact matters most here? It's the marginal tax rate.",
+      "parts": []
+    },
+    {
+      "id": 18,
+      "start": 77.04,
+      "end": 80.4,
+      "en": "If current rates are higher than future rates, traditional is your best bet.",
+      "parts": []
+    },
+    {
+      "id": 19,
+      "start": 80.52,
+      "end": 83.34,
+      "en": "But if future rates are higher, Roth is definitely the way to ago.",
+      "parts": []
+    },
+    {
+      "id": 20,
+      "start": 84.08,
+      "end": 89.52,
+      "en": "Now, here's a huge exam trigger. A taxpayer with an employer plan wants an IRA deduction.",
+      "parts": []
+    },
+    {
+      "id": 21,
+      "start": 89.78,
+      "end": 92.72,
+      "en": "You absolutely must calculate the phase-out.",
+      "parts": []
+    },
+    {
+      "id": 22,
+      "start": 92.84,
+      "end": 95.88,
+      "en": "Don't just guess. Walk through these exact logical steps.",
+      "parts": []
+    },
+    {
+      "id": 23,
+      "start": 96.32,
+      "end": 99.74,
+      "en": "Let's say we have a single taxpayer with an AGI of $81,000.",
+      "parts": []
+    },
+    {
+      "id": 24,
+      "start": 100.14,
+      "end": 106.56,
+      "en": "Step one, identify the threshold. Let's assume the phase-out begins at $79,000 and has a $10,000 range.",
+      "parts": []
+    },
+    {
+      "id": 25,
+      "start": 106.56,
+      "end": 113.16,
+      "en": "range. Step two, calculate the excess. $81,000 minus $79,000 gives us a $2,000 excess.",
+      "parts": []
+    },
+    {
+      "id": 26,
+      "start": 113.5,
+      "end": 119.54,
+      "en": "Step three, get the percentage. That $2,000 divided by the $10,000 range is 20%.",
+      "parts": []
+    },
+    {
+      "id": 27,
+      "start": 119.54,
+      "end": 126.42,
+      "en": "Finally, step four, multiply that 20% by the maximum allowed deduction and subtract that number from the limit.",
+      "parts": []
+    },
+    {
+      "id": 28,
+      "start": 126.6,
+      "end": 138.28,
+      "en": "Boom, that is your final deduction amount. Looking at the broader landscape of retirement plans, the main thing to remember is the difference in early withdrawal penalties and required minimum distributions, or RMDs.",
+      "parts": []
+    },
+    {
+      "id": 29,
+      "start": 138.48,
+      "end": 143.72,
+      "en": "If you see a distribution before age 59 and a half, instantly think of the 10% penalty.",
+      "parts": []
+    },
+    {
+      "id": 30,
+      "start": 143.9,
+      "end": 147.6,
+      "en": "But always, always check for exceptions, like qualified medical expenses.",
+      "parts": []
+    },
+    {
+      "id": 31,
+      "start": 147.96,
+      "end": 155.5,
+      "en": "And remember this golden rule. RMDs apply to traditional IRAs and 401ks, but they do not apply to Roth IRAs.",
+      "parts": []
+    },
+    {
+      "id": 32,
+      "start": 156.12,
+      "end": 162.1,
+      "en": "Moving on to annuities. If the exam asks you to calculate the taxable portion of an annuity, how do you do it?",
+      "parts": []
+    },
+    {
+      "id": 33,
+      "start": 162.16,
+      "end": 171.36,
+      "en": "You've got to use the exclusion ratio. Think of an annuity like it has two parts, a non-taxable return of your original investment and the taxable earnings.",
+      "parts": []
+    },
+    {
+      "id": 34,
+      "start": 171.74,
+      "end": 175.94,
+      "en": "Step one, divide your original investment by the total expected return.",
+      "parts": []
+    },
+    {
+      "id": 35,
+      "start": 176.16,
+      "end": 181.46,
+      "en": "That gives you the exclusion ratio. Step two, multiply your payment by this ratio.",
+      "parts": []
+    },
+    {
+      "id": 36,
+      "start": 181.66,
+      "end": 186.16,
+      "en": "This chunk is your tax-free portion. Whatever's left over, that's your taxable income.",
+      "parts": []
+    },
+    {
+      "id": 37,
+      "start": 186.36,
+      "end": 191.84,
+      "en": "Simple as that. Okay, let's switch gears and move to section two, risk and investment return.",
+      "parts": []
+    },
+    {
+      "id": 38,
+      "start": 191.84,
+      "end": 194.66,
+      "en": "Which rule applies when evaluating risk?",
+      "parts": []
+    },
+    {
+      "id": 39,
+      "start": 195.08,
+      "end": 197.86,
+      "en": "Well, systematic risk affects the whole economy.",
+      "parts": []
+    },
+    {
+      "id": 40,
+      "start": 198.06,
+      "end": 201.58,
+      "en": "Think about it like a rising tide. You simply cannot diversify it away.",
+      "parts": []
+    },
+    {
+      "id": 41,
+      "start": 202.2,
+      "end": 207.86,
+      "en": "Non-systematic risk, however, is company-specific, meaning you actually can reduce it through diversification.",
+      "parts": []
+    },
+    {
+      "id": 42,
+      "start": 208.2,
+      "end": 213.24,
+      "en": "So for an exam trigger, if you see inflation or global events, that's systematic.",
+      "parts": []
+    },
+    {
+      "id": 43,
+      "start": 213.54,
+      "end": 217.54,
+      "en": "But if a CEO unexpectedly resigns, that's totally non-systematic.",
+      "parts": []
+    },
+    {
+      "id": 44,
+      "start": 218.26,
+      "end": 223.26,
+      "en": "Here's a crucial trap to avoid. A higher pre-tax return is not always the better choice.",
+      "parts": []
+    },
+    {
+      "id": 45,
+      "start": 223.38,
+      "end": 226.66,
+      "en": "You absolutely must calculate the after-tax rate of return.",
+      "parts": []
+    },
+    {
+      "id": 46,
+      "start": 227.32,
+      "end": 232.2,
+      "en": "Step one, calculate your initial ROI, which is just your gain divided by your cost.",
+      "parts": []
+    },
+    {
+      "id": 47,
+      "start": 232.52,
+      "end": 235.7,
+      "en": "Step two, figure out the total applicable tax rate.",
+      "parts": []
+    },
+    {
+      "id": 48,
+      "start": 235.8,
+      "end": 239.4,
+      "en": "Make sure to add up federal, state, and net investment taxes.",
+      "parts": []
+    },
+    {
+      "id": 49,
+      "start": 239.88,
+      "end": 244.06,
+      "en": "Step three, multiply your ROI by one minus the tax rate.",
+      "parts": []
+    },
+    {
+      "id": 50,
+      "start": 244.3,
+      "end": 252.52,
+      "en": "This reveals what you actually get to keep in your pocket. Now, what fact matters most when you're choosing between corporate bonds and municipal bonds?",
+      "parts": []
+    },
+    {
+      "id": 51,
+      "start": 252.98,
+      "end": 257.58,
+      "en": "Think about it for a second. It all comes down to the taxpayer's income tax bracket.",
+      "parts": []
+    },
+    {
+      "id": 52,
+      "start": 258.36,
+      "end": 265.92,
+      "en": "A high-income taxpayer. Municipal bond interest is completely exempt from federal income tax, whereas corporate bond interest is fully taxable.",
+      "parts": []
+    },
+    {
+      "id": 53,
+      "start": 266.18,
+      "end": 275.12,
+      "en": "So for a really high earner, a 4% municipal bond might actually give a much higher after-tax rate of return than a 6% corporate bond.",
+      "parts": []
+    },
+    {
+      "id": 54,
+      "start": 275.12,
+      "end": 277.8,
+      "en": "You have to always compare those after-tax yields.",
+      "parts": []
+    },
+    {
+      "id": 55,
+      "start": 278.64,
+      "end": 281.82,
+      "en": "All right, let's roll into Section 3, Education Funding Options.",
+      "parts": []
+    },
+    {
+      "id": 56,
+      "start": 282.48,
+      "end": 286.18,
+      "en": "You really need to pay attention to the distinct limits and conditions here.",
+      "parts": []
+    },
+    {
+      "id": 57,
+      "start": 286.46,
+      "end": 295.74,
+      "en": "For Section 529 plans, there is no strict age limit, and unused funds actually have a potential to roll over to a Roth IRA after 15 years, which is an awesome feature.",
+      "parts": []
+    },
+    {
+      "id": 58,
+      "start": 296.54,
+      "end": 304.2,
+      "en": "Coverdell accounts, though, much stricter. The beneficiary must be under 18, and contributions are hard-capped at just $2,000 a year.",
+      "parts": []
+    },
+    {
+      "id": 59,
+      "start": 304.2,
+      "end": 311.16,
+      "en": "Then you have U.S. Series EE bonds, which are tax-exempt only if they're used for qualified education expenses.",
+      "parts": []
+    },
+    {
+      "id": 60,
+      "start": 311.74,
+      "end": 319.42,
+      "en": "Finally, UGMA or UTMA accounts. The big thing there is that control of the asset transfers completely to the child at the age of majority.",
+      "parts": []
+    },
+    {
+      "id": 61,
+      "start": 320.18,
+      "end": 324.24,
+      "en": "Let's look at a really common exam trap regarding federal student financial aid.",
+      "parts": []
+    },
+    {
+      "id": 62,
+      "start": 324.38,
+      "end": 329.32,
+      "en": "On the FAFSA, are 529 plans considered a student asset or a parent asset?",
+      "parts": []
+    },
+    {
+      "id": 63,
+      "start": 329.32,
+      "end": 334.66,
+      "en": "asset. The main thing to remember is that student assets heavily penalize financial aid eligibility.",
+      "parts": []
+    },
+    {
+      "id": 64,
+      "start": 335.0,
+      "end": 341.86,
+      "en": "If a parent owns the 529 for a dependent student, FAFSA only expects up to 5.64% of it to be used for college.",
+      "parts": []
+    },
+    {
+      "id": 65,
+      "start": 342.06,
+      "end": 346.84,
+      "en": "But if an independent student owns it, FAFSA expects up to 20% to be used.",
+      "parts": []
+    },
+    {
+      "id": 66,
+      "start": 347.06,
+      "end": 350.3,
+      "en": "Who owns the account changes the financial aid package entirely.",
+      "parts": []
+    },
+    {
+      "id": 67,
+      "start": 351.24,
+      "end": 355.32,
+      "en": "Moving right along, here is Section 4, Insurance and Risk Mitigation.",
+      "parts": []
+    },
+    {
+      "id": 68,
+      "start": 355.9,
+      "end": 360.92,
+      "en": "Whenever you see risk questions, instantly use this frequency and severity grid in your head.",
+      "parts": []
+    },
+    {
+      "id": 69,
+      "start": 361.02,
+      "end": 366.8,
+      "en": "If you see a fact pattern with high severity but low frequency, like a house fire, think risk transfer.",
+      "parts": []
+    },
+    {
+      "id": 70,
+      "start": 367.02,
+      "end": 369.84,
+      "en": "You buy insurance. High frequency, low severity?",
+      "parts": []
+    },
+    {
+      "id": 71,
+      "start": 370.04,
+      "end": 373.9,
+      "en": "Think minor car scratches. That's risk reduction or risk retention.",
+      "parts": []
+    },
+    {
+      "id": 72,
+      "start": 374.26,
+      "end": 378.86,
+      "en": "And if something is both high frequency and high severity, that's risk avoidance.",
+      "parts": []
+    },
+    {
+      "id": 73,
+      "start": 378.94,
+      "end": 386.02,
+      "en": "You simply do not participate in that activity. You also need to clearly distinguish term versus permanent life insurance.",
+      "parts": []
+    },
+    {
+      "id": 74,
+      "start": 386.69,
+      "end": 390.7,
+      "en": "Term insurance covers a definite period and has literally zero cash value.",
+      "parts": []
+    },
+    {
+      "id": 75,
+      "start": 390.86,
+      "end": 396.24,
+      "en": "It's kind of like renting an apartment. Permanent insurance, however, builds tax-deferred cash value.",
+      "parts": []
+    },
+    {
+      "id": 76,
+      "start": 396.4,
+      "end": 401.52,
+      "en": "It's more like owning a home. Part of your premium actually builds equity that you can borrow against later on.",
+      "parts": []
+    },
+    {
+      "id": 77,
+      "start": 402.22,
+      "end": 405.58,
+      "en": "Let's dive into Section 5, estate planning asset transfers.",
+      "parts": []
+    },
+    {
+      "id": 78,
+      "start": 406.7,
+      "end": 409.56,
+      "en": "Beneficiary designations always beat a will. assets",
+      "parts": []
+    },
+    {
+      "id": 79,
+      "start": 409.56,
+      "end": 412.52,
+      "en": "labeled payable on death or pod bypass",
+      "parts": []
+    },
+    {
+      "id": 80,
+      "start": 412.52,
+      "end": 415.22,
+      "en": "probate entirely so if a will says",
+      "parts": []
+    },
+    {
+      "id": 81,
+      "start": 415.22,
+      "end": 418.02,
+      "en": "the son gets the money but the pod designation says",
+      "parts": []
+    },
+    {
+      "id": 82,
+      "start": 418.02,
+      "end": 421.32,
+      "en": "the daughter the daughter gets it end of story but",
+      "parts": []
+    },
+    {
+      "id": 83,
+      "start": 421.32,
+      "end": 422.04,
+      "en": "watch out for",
+      "parts": []
+    },
+    {
+      "id": 84,
+      "start": 422.04,
+      "end": 435.92,
+      "en": "this massive exam trap bypassing probate does not mean bypassing taxes probate avoidance is not tax avoidance the asset still remains firmly in the gross estate and finally let's wrap things up with Section 6,",
+      "parts": []
+    },
+    {
+      "id": 85,
+      "start": 436.14,
+      "end": 440.04,
+      "en": "Final Exam Rapid Review. Let's test your pattern recognition.",
+      "parts": []
+    },
+    {
+      "id": 86,
+      "start": 440.48,
+      "end": 447.34,
+      "en": "A 45-year-old single taxpayer participates in an employer 401k and wants to deduct a traditional IRA contribution.",
+      "parts": []
+    },
+    {
+      "id": 87,
+      "start": 447.96,
+      "end": 451.26,
+      "en": "Which rule applies here? Identify your exam triggers.",
+      "parts": []
+    },
+    {
+      "id": 88,
+      "start": 451.78,
+      "end": 454.4,
+      "en": "Fact one, they participate in an employer plan.",
+      "parts": []
+    },
+    {
+      "id": 89,
+      "start": 454.64,
+      "end": 457.5,
+      "en": "Fact two, they want a traditional IRA deduction.",
+      "parts": []
+    },
+    {
+      "id": 90,
+      "start": 458.72,
+      "end": 463.7,
+      "en": "The classic exam trap here is assuming that all traditional IRAs are fully deductible.",
+      "parts": []
+    },
+    {
+      "id": 91,
+      "start": 463.8,
+      "end": 470.14,
+      "en": "They aren't. Because this taxpayer has an employer plan, you absolutely must test the AGI phase-out limits.",
+      "parts": []
+    },
+    {
+      "id": 92,
+      "start": 470.34,
+      "end": 476.18,
+      "en": "If they had no employer plan whatsoever, they could take the full deduction, completely regardless of their income level.",
+      "parts": []
+    },
+    {
+      "id": 93,
+      "start": 476.94,
+      "end": 479.54,
+      "en": "Finally, the number 59 and a half.",
+      "parts": []
+    },
+    {
+      "id": 94,
+      "start": 479.78,
+      "end": 486.38,
+      "en": "Burn this exact age into your memory. It is the primary threshold for avoiding those nasty premature distribution penalties.",
+      "parts": []
+    },
+    {
+      "id": 95,
+      "start": 486.8,
+      "end": 489.58,
+      "en": "As you prepare, don't just memorize the dollar limits.",
+      "parts": []
+    },
+    {
+      "id": 96,
+      "start": 489.88,
+      "end": 494.74,
+      "en": "Master the logic. Always ask yourself why one alternative gives a better after-tax result.",
+      "parts": []
+    },
+    {
+      "id": 97,
+      "start": 495.1,
+      "end": 498.92,
+      "en": "Are you ready to apply these exact rules on exam day to beat the CPA traps?",
+      "parts": []
+    },
+    {
+      "id": 98,
+      "start": 499.26,
+      "end": 502.34,
+      "en": "I know you are. Good luck with your practice questions, and keep at it.",
+      "parts": []
+    }
+  ]
+}

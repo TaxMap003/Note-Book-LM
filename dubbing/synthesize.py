@@ -36,8 +36,12 @@ def estimate_f0(video: Path, seconds: int = 60) -> float:
         wav = Path(tmp) / "a.wav"
         run(["ffmpeg", "-y", "-i", str(video), "-t", str(seconds), "-vn", "-ac", "1", "-ar", "16000", str(wav)])
         y, sr = librosa.load(wav, sr=16000)
-    f0, voiced, _ = librosa.pyin(y, fmin=60, fmax=400, sr=sr, frame_length=1024)
-    return float(np.nanmedian(f0[voiced])) if voiced.any() else float("nan")
+    # YIN on the louder (voiced) frames; pYIN is far slower for the same answer here
+    f0 = librosa.yin(y, fmin=60, fmax=400, sr=sr, frame_length=1024, hop_length=256)
+    rms = librosa.feature.rms(y=y, frame_length=1024, hop_length=256)[0]
+    n = min(len(f0), len(rms))
+    voiced = rms[:n] > np.percentile(rms[:n], 60)
+    return float(np.median(f0[:n][voiced]))
 
 
 def resolve_voice(voice: str, match_video: Path | None, voices_dir: Path) -> tuple[list[Path], str]:
