@@ -1,0 +1,11 @@
+# Python / virtualenvs
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Downloaded model weights (re-created by dubbing/setup.sh)
+dubbing/models/
+
+# Intermediate pipeline output (re-created by the scripts)
+work/
