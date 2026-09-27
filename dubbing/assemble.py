@@ -25,8 +25,9 @@ from common import WORK, fmt_srt_time, load_json, probe, run, save_json
 
 SR = 24000
 RLM = "‏"
-# "$50,000", "20%", "1,250.75" - kept left-to-right inside RTL lines (libass misorders a leading "$")
-LTR_NUMBER = re.compile(r"[$€£]?\d[\d,.]*\d%?|[$€£]?\d%?")
+# "$50,000", "20%", "59½" - kept left-to-right inside RTL lines: "½" is bidi-neutral and lands on the
+# wrong side of the number in any compliant renderer, and libass also misorders a leading "$"
+LTR_NUMBER = re.compile(r"[$€£]?\d[\d,.]*\d[%½]?|[$€£]?\d[%½]?")
 
 
 def plan(units: list[dict], manifest: dict, duration: float, gap: float, max_slow: float, min_piece: float) -> list[dict]:
@@ -81,6 +82,7 @@ def wrap(text: str, width: int, rtl: bool) -> str:
             cut = min(spaces, key=lambda i: abs(i - mid))
             text = text[:cut] + "\n" + text[cut + 1 :]
     if rtl:
+        text = LTR_NUMBER.sub(lambda m: "‪" + m.group(0) + "‬", text)
         text = "\n".join(RLM + line for line in text.split("\n"))
     return text
 
@@ -131,7 +133,6 @@ def write_ass(cues: list[list], path: Path, width: int, height: int, font: str) 
         "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
     ]
     for s, e, text in cues:
-        text = LTR_NUMBER.sub(lambda m: "‪" + m.group(0) + "‬", text)
         lines.append(f"Dialogue: 0,{t(s)},{t(e)},Default,,0,0,0,,{text.replace(chr(10), chr(92) + 'N')}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -176,6 +177,7 @@ def main() -> None:
     ap.add_argument("--crf", type=int, default=20)
     ap.add_argument("--no-intro-audio", action="store_true", help="do not keep the original audio before the first unit")
     ap.add_argument("--burn", action="store_true", help="also write a copy with Arabic subtitles burned in")
+    ap.add_argument("--reuse-video", action="store_true", help="skip re-rendering when the timing plan is unchanged (subtitle-only edits)")
     ap.add_argument("--font", default="Noto Sans Arabic", help="font for --burn")
     args = ap.parse_args()
 
@@ -188,22 +190,35 @@ def main() -> None:
     info = probe(args.video)
     pieces = plan(units, manifest, info["duration"], args.gap, args.max_slow, args.min_piece)
 
-    seg_dir = WORK / "segments"
-    shutil.rmtree(seg_dir, ignore_errors=True)
-    seg_dir.mkdir(parents=True)
-    cursor = 0.0
-    for n, piece in enumerate(pieces):
-        dst = seg_dir / f"seg_{n:04d}.mp4"
-        piece["out_start"] = cursor
-        piece["out_duration"] = render_piece(args.video, piece, info["fps_str"], args.crf, dst)
-        cursor += piece["out_duration"]
-        print(f"piece {n + 1}/{len(pieces)}: {piece['kind']} slow x{piece['slow']:.2f} hold {piece['freeze']:.2f}s -> {piece['out_duration']:.2f}s")
-    total = cursor
-
-    concat_list = seg_dir / "list.txt"
-    concat_list.write_text("".join(f"file '{p.name}'\n" for p in sorted(seg_dir.glob("seg_*.mp4"))), encoding="utf-8")
     video_only = WORK / "video_retimed.mp4"
-    run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_list), "-c", "copy", str(video_only)])
+    report_path = WORK / "assembly_report.json"
+    reused = False
+    if args.reuse_video and video_only.exists() and report_path.exists():
+        old = load_json(report_path)["pieces"]
+        keys = ("kind", "unit", "src_start", "src_end", "slow", "freeze")
+        if len(old) == len(pieces) and all(all(o.get(k) == p.get(k) for k in keys) for o, p in zip(old, pieces)):
+            for o, p in zip(old, pieces):
+                p["out_start"], p["out_duration"] = o["out_start"], o["out_duration"]
+            reused = True
+            print(f"timing unchanged: reusing {video_only}")
+        else:
+            print("timing changed since the last run: re-rendering the video")
+
+    if not reused:
+        seg_dir = WORK / "segments"
+        shutil.rmtree(seg_dir, ignore_errors=True)
+        seg_dir.mkdir(parents=True)
+        cursor = 0.0
+        for n, piece in enumerate(pieces):
+            dst = seg_dir / f"seg_{n:04d}.mp4"
+            piece["out_start"] = cursor
+            piece["out_duration"] = render_piece(args.video, piece, info["fps_str"], args.crf, dst)
+            cursor += piece["out_duration"]
+            print(f"piece {n + 1}/{len(pieces)}: {piece['kind']} slow x{piece['slow']:.2f} hold {piece['freeze']:.2f}s -> {piece['out_duration']:.2f}s")
+        concat_list = seg_dir / "list.txt"
+        concat_list.write_text("".join(f"file '{p.name}'\n" for p in sorted(seg_dir.glob("seg_*.mp4"))), encoding="utf-8")
+        run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat_list), "-c", "copy", str(video_only)])
+    total = sum(p["out_duration"] for p in pieces)
 
     narration = np.zeros(int((total + 1.0) * SR), dtype=np.float32)
     unit_start = {}

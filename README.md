@@ -4,6 +4,14 @@ Turns a NotebookLM Video Overview into an Egyptian Arabic version for CPA **TCP*
 The narration is re-voiced with [Nile TTS](https://huggingface.co/KickItLikeShika/NileTTS-XTTS), an XTTS v2 model fine-tuned for Egyptian Arabic.
 Tax terminology, definitions, IRC sections, forms, and the original examples stay exactly as in the English video.
 
+## Videos
+
+| Source | Egyptian Arabic version | Length |
+|---|---|---|
+| TCP M4: Financial Planning (release `v1`) | [MP4 with Arabic + English subtitle tracks](output/TCP_M4_Financial_Planning_Egyptian_Arabic.mp4) · [MP4 with Arabic subtitles burned in](output/TCP_M4_Financial_Planning_Egyptian_Arabic_subtitled.mp4) · [bilingual script + glossary](output/TCP_M4_Financial_Planning_Egyptian_Arabic.script.md) | 10:35 (original 8:26) |
+
+Every line was checked by transcribing the Nile TTS audio back with Whisper. Lines with slurred words, trailing babble or an unclear exam term were re-voiced, keeping the best of four takes.
+
 ## Pipeline
 
 | Step | Script | Output |
@@ -33,6 +41,8 @@ python dubbing/assemble.py   --video input/original.mp4 --script script/script_a
 ```
 
 `--voice auto` picks the Nile TTS male or female voice to match the original narrator's pitch; `--voice male` or `--voice female` forces one.
+
+Re-voice lines the QA step flags with `synthesize.py --only 12,34 --pick-best 4` (four takes each, Whisper keeps the clearest), check them with `qa_tts.py --only 12,34`, and re-run `assemble.py`. After subtitle-only edits, `assemble.py --reuse-video` skips re-rendering the video.
 
 ## Credits
 

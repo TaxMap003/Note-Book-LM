@@ -1,0 +1,660 @@
+1
+00:00:00,000 --> 00:00:04,543
+Welcome to this explainer
+for the CPA-TCP M4 module.
+
+2
+00:00:04,583 --> 00:00:04,893
+Today,
+
+3
+00:00:04,933 --> 00:00:09,835
+we're going to build your pattern
+recognition for personal financial planning.
+
+4
+00:00:09,875 --> 00:00:12,158
+We're keeping it strictly to simple English,
+
+5
+00:00:12,198 --> 00:00:16,335
+but we'll use the exact official tax
+terminology you'll see on the exam.
+
+6
+00:00:16,375 --> 00:00:17,736
+Our ultimate goal here?
+
+7
+00:00:17,776 --> 00:00:25,918
+We want you to deeply understand these rules so you can confidently
+tackle multiple choice questions and task-based simulations.
+
+8
+00:00:25,958 --> 00:00:30,292
+We are focusing heavily on application,
+analysis, and those tricky calculations. So,
+
+9
+00:00:30,332 --> 00:00:31,773
+let's dive right in.
+
+10
+00:00:32,417 --> 00:00:37,127
+Here's our quick roadmap for today
+to keep everything super structured.
+
+11
+00:00:37,167 --> 00:00:43,710
+We're covering: 1. Retirement plans and
+annuities. 2. Risk and investment return.
+
+12
+00:00:43,750 --> 00:00:49,710
+3. Education funding options. 4.
+Insurance and risk mitigation.
+
+13
+00:00:49,750 --> 00:00:53,107
+5. Estate planning asset
+transfers. And finally, 6.
+
+14
+00:00:53,147 --> 00:00:55,811
+A rapid review for the final exam.
+
+15
+00:00:56,250 --> 00:01:01,585
+Alright, let's jump right into Section
+1, Retirement Plans and Annuities.
+
+16
+00:01:01,625 --> 00:01:06,710
+Let's start with a classic comparison,
+traditional versus Roth accounts.
+
+17
+00:01:06,750 --> 00:01:12,025
+If you see this fact on the exam, pre-tax
+contributions and taxable distributions,
+
+18
+00:01:12,065 --> 00:01:13,543
+think traditional.
+
+19
+00:01:13,583 --> 00:01:18,752
+You get a nice deduction now, but you're
+going to pay ordinary income tax later.
+
+20
+00:01:18,792 --> 00:01:23,853
+On the flip side, if you see after-tax
+contributions and tax-free distributions,
+
+21
+00:01:23,893 --> 00:01:24,918
+think Roth.
+
+22
+00:01:24,958 --> 00:01:29,668
+There's no deduction up front, but
+you get that sweet tax-free growth.
+
+23
+00:01:29,708 --> 00:01:33,335
+So what fact matters most here?
+It's the marginal tax rate.
+
+24
+00:01:33,375 --> 00:01:39,168
+If current rates are higher than future
+rates, traditional is your best bet.
+
+25
+00:01:39,208 --> 00:01:44,293
+But if future rates are higher,
+Roth is definitely the way to go.
+
+26
+00:01:44,333 --> 00:01:47,009
+Now, here's a huge exam trigger.
+
+27
+00:01:47,049 --> 00:01:52,127
+A taxpayer with an employer
+plan wants an IRA deduction.
+
+28
+00:01:52,167 --> 00:01:54,604
+You absolutely must calculate the phase-out.
+
+29
+00:01:55,250 --> 00:01:59,543
+Don't just guess. Walk through
+these exact logical steps.
+
+30
+00:01:59,583 --> 00:02:05,168
+Let's say we have a single
+taxpayer with an AGI of $81,000.
+
+31
+00:02:05,208 --> 00:02:08,026
+Step one, identify the threshold.
+
+32
+00:02:08,066 --> 00:02:14,418
+Let's assume the phase-out begins
+at $79,000 and has a $10,000 range.
+
+33
+00:02:14,458 --> 00:02:23,377
+Step two, calculate the excess. $81,000
+minus $79,000 gives us a $2,000 excess.
+
+34
+00:02:23,417 --> 00:02:32,585
+Step three, get the percentage. That $2,000
+divided by the $10,000 range is 20%.
+
+35
+00:02:32,625 --> 00:02:33,917
+Finally, step four,
+
+36
+00:02:33,957 --> 00:02:40,299
+multiply that 20% by the maximum allowed
+deduction and subtract that number from the limit.
+
+37
+00:02:40,339 --> 00:02:43,627
+Boom, that is your final deduction amount.
+
+38
+00:02:43,667 --> 00:02:47,313
+Looking at the broader
+landscape of retirement plans,
+
+39
+00:02:47,353 --> 00:02:54,963
+the main thing to remember is the difference in early
+withdrawal penalties and required minimum distributions,
+
+40
+00:02:55,003 --> 00:02:55,877
+or RMDs.
+
+41
+00:02:55,917 --> 00:02:59,708
+If you see a distribution
+before age 59 and a half,
+
+42
+00:02:59,748 --> 00:03:02,752
+instantly think of the 10% penalty.
+
+43
+00:03:02,792 --> 00:03:08,460
+But always, always check for exceptions,
+like qualified medical expenses.
+
+44
+00:03:08,500 --> 00:03:14,290
+And remember this golden rule. RMDs
+apply to traditional IRAs and 401(k)s,
+
+45
+00:03:14,330 --> 00:03:17,418
+but they do not apply to Roth IRAs.
+
+46
+00:03:17,458 --> 00:03:18,828
+Moving on to annuities.
+
+47
+00:03:18,868 --> 00:03:22,997
+If the exam asks you to calculate
+the taxable portion of an annuity,
+
+48
+00:03:23,037 --> 00:03:24,377
+how do you do it?
+
+49
+00:03:24,417 --> 00:03:31,907
+You've got to use the exclusion ratio.
+Think of an annuity like it has two parts,
+
+50
+00:03:31,947 --> 00:03:39,168
+a non-taxable return of your original
+investment and the taxable earnings.
+
+51
+00:03:39,208 --> 00:03:44,627
+Step one, divide your original
+investment by the total expected return.
+
+52
+00:03:44,667 --> 00:03:50,252
+That gives you the exclusion ratio. Step
+two, multiply your payment by this ratio.
+
+53
+00:03:50,292 --> 00:03:54,553
+This chunk is your tax-free
+portion. Whatever's left over,
+
+54
+00:03:54,593 --> 00:03:58,127
+that's your taxable income. Simple as that.
+
+55
+00:03:58,167 --> 00:04:03,085
+Okay, let's switch gears and move to
+Section 2, risk and investment return.
+
+56
+00:04:03,125 --> 00:04:06,543
+Which rule applies when evaluating risk?
+
+57
+00:04:06,583 --> 00:04:11,168
+Well, systematic risk
+affects the whole economy.
+
+58
+00:04:11,208 --> 00:04:18,918
+Think about it like a rising tide.
+You simply cannot diversify it away.
+
+59
+00:04:18,958 --> 00:04:22,741
+Non-systematic risk, however,
+is company-specific,
+
+60
+00:04:22,781 --> 00:04:27,585
+meaning you actually can reduce
+it through diversification.
+
+61
+00:04:27,625 --> 00:04:32,704
+So for an exam trigger, if you see inflation
+or global events, that's systematic.
+
+62
+00:04:33,000 --> 00:04:37,663
+But if a CEO unexpectedly resigns,
+that's totally non-systematic.
+
+63
+00:04:37,750 --> 00:04:40,059
+Here's a crucial trap to avoid.
+
+64
+00:04:40,099 --> 00:04:44,668
+A higher pre-tax return is
+not always the better choice.
+
+65
+00:04:44,708 --> 00:04:48,752
+You absolutely must calculate
+the after-tax rate of return.
+
+66
+00:04:48,792 --> 00:04:54,960
+Step one, calculate your initial ROI, which
+is just your gain divided by your cost.
+
+67
+00:04:55,000 --> 00:04:58,793
+Step two, figure out the
+total applicable tax rate.
+
+68
+00:04:58,833 --> 00:05:03,543
+Make sure to add up federal,
+state, and net investment taxes.
+
+69
+00:05:03,583 --> 00:05:06,900
+Step three, multiply your ROI
+by one minus the tax rate.
+
+70
+00:05:06,940 --> 00:05:10,816
+This reveals what you actually
+get to keep in your pocket.
+
+71
+00:05:11,250 --> 00:05:11,423
+Now,
+
+72
+00:05:11,463 --> 00:05:16,553
+what fact matters most when you're choosing
+between corporate bonds and municipal bonds?
+
+73
+00:05:16,708 --> 00:05:22,085
+Think about it for a second. It all comes
+down to the taxpayer's income tax bracket.
+
+74
+00:05:22,125 --> 00:05:23,719
+A high-income taxpayer.
+
+75
+00:05:23,759 --> 00:05:28,620
+Municipal bond interest is completely
+exempt from federal income tax,
+
+76
+00:05:28,660 --> 00:05:32,460
+whereas corporate bond
+interest is fully taxable.
+
+77
+00:05:32,500 --> 00:05:34,794
+So for a really high earner,
+
+78
+00:05:34,834 --> 00:05:43,835
+a 4% municipal bond might actually give a much higher
+after-tax rate of return than a 6% corporate bond.
+
+79
+00:05:43,875 --> 00:05:47,162
+You have to always compare
+those after-tax yields.
+
+80
+00:05:47,417 --> 00:05:51,918
+All right, let's roll into Section
+3, Education Funding Options.
+
+81
+00:05:51,958 --> 00:05:55,918
+You really need to pay attention to the
+distinct limits and conditions here.
+
+82
+00:05:55,958 --> 00:06:00,161
+For Section 529 plans, there
+is no strict age limit,
+
+83
+00:06:00,201 --> 00:06:07,095
+and unused funds actually have a potential
+to roll over to a Roth IRA after 15 years,
+
+84
+00:06:07,135 --> 00:06:09,752
+which is an awesome feature.
+
+85
+00:06:09,792 --> 00:06:15,408
+Coverdell accounts, though, much stricter.
+The beneficiary must be under 18,
+
+86
+00:06:15,448 --> 00:06:19,918
+and contributions are hard-capped
+at just $2,000 a year.
+
+87
+00:06:19,958 --> 00:06:22,676
+Then you have U.S. Series EE bonds,
+
+88
+00:06:22,716 --> 00:06:28,918
+which are tax-exempt only if they're
+used for qualified education expenses.
+
+89
+00:06:28,958 --> 00:06:30,894
+Finally, UGMA or UTMA accounts.
+
+90
+00:06:30,934 --> 00:06:38,002
+The big thing there is that control of the asset
+transfers completely to the child at the age of majority.
+
+91
+00:06:38,042 --> 00:06:43,377
+Let's look at a really common exam trap
+regarding federal student financial aid.
+
+92
+00:06:43,417 --> 00:06:49,335
+On the FAFSA, are 529 plans considered
+a student asset or a parent asset?
+
+93
+00:06:49,375 --> 00:06:56,335
+The main thing to remember is that student assets
+heavily penalize financial aid eligibility.
+
+94
+00:06:56,375 --> 00:07:01,482
+If a parent owns the 529
+for a dependent student,
+
+95
+00:07:01,522 --> 00:07:08,168
+FAFSA only expects up to 5.64%
+of it to be used for college.
+
+96
+00:07:08,208 --> 00:07:15,252
+But if an independent student owns it,
+FAFSA expects up to 20% to be used.
+
+97
+00:07:15,292 --> 00:07:20,835
+Who owns the account changes the
+financial aid package entirely.
+
+98
+00:07:20,875 --> 00:07:26,085
+Moving right along, here is Section
+4, Insurance and Risk Mitigation.
+
+99
+00:07:26,125 --> 00:07:28,215
+Whenever you see risk questions,
+
+100
+00:07:28,255 --> 00:07:32,585
+instantly use this frequency
+and severity grid in your head.
+
+101
+00:07:32,625 --> 00:07:37,773
+If you see a fact pattern with high severity
+but low frequency, like a house fire,
+
+102
+00:07:37,813 --> 00:07:39,377
+think risk transfer.
+
+103
+00:07:39,417 --> 00:07:43,960
+You buy insurance. High
+frequency, low severity?
+
+104
+00:07:44,000 --> 00:07:51,627
+Think minor car scratches. That's
+risk reduction or risk retention.
+
+105
+00:07:51,667 --> 00:07:56,347
+And if something is both high frequency
+and high severity, that's risk avoidance.
+
+106
+00:07:56,387 --> 00:07:59,460
+You simply do not
+participate in that activity.
+
+107
+00:07:59,500 --> 00:08:05,377
+You also need to clearly distinguish
+term versus permanent life insurance.
+
+108
+00:08:05,417 --> 00:08:11,002
+Term insurance covers a definite period
+and has literally zero cash value.
+
+109
+00:08:11,042 --> 00:08:14,635
+It's kind of like renting an apartment.
+Permanent insurance, however,
+
+110
+00:08:14,675 --> 00:08:16,627
+builds tax-deferred cash value.
+
+111
+00:08:16,667 --> 00:08:18,669
+It's more like owning a home.
+
+112
+00:08:18,709 --> 00:08:24,752
+Part of your premium actually builds equity
+that you can borrow against later on.
+
+113
+00:08:24,792 --> 00:08:29,627
+Let's dive into Section 5,
+estate planning asset transfers.
+
+114
+00:08:29,667 --> 00:08:33,502
+Beneficiary designations always beat a will.
+
+115
+00:08:33,542 --> 00:08:38,543
+Assets labeled payable on death,
+or POD, bypass probate entirely.
+
+116
+00:08:38,583 --> 00:08:44,881
+So if a will says the son gets the money,
+but the POD designation says the daughter,
+
+117
+00:08:44,921 --> 00:08:47,918
+the daughter gets it. End of story.
+
+118
+00:08:47,958 --> 00:08:50,932
+But watch out for this massive exam trap:
+
+119
+00:08:50,972 --> 00:08:54,835
+bypassing probate does
+not mean bypassing taxes.
+
+120
+00:08:54,875 --> 00:08:57,263
+Probate avoidance is not tax avoidance.
+
+121
+00:08:57,303 --> 00:09:00,793
+The asset still remains
+firmly in the gross estate.
+
+122
+00:09:00,833 --> 00:09:05,635
+And finally, let's wrap things up with
+Section 6, Final Exam Rapid Review.
+
+123
+00:09:06,833 --> 00:09:10,011
+Let's test your pattern recognition.
+
+124
+00:09:10,051 --> 00:09:20,752
+A 45-year-old single taxpayer participates in an employer
+401(k) and wants to deduct a traditional IRA contribution.
+
+125
+00:09:20,792 --> 00:09:25,252
+Which rule applies here?
+Identify your exam triggers.
+
+126
+00:09:25,292 --> 00:09:29,210
+Fact one, they participate
+in an employer plan.
+
+127
+00:09:29,250 --> 00:09:33,960
+Fact two, they want a
+traditional IRA deduction.
+
+128
+00:09:34,000 --> 00:09:41,960
+The classic exam trap here is assuming that
+all traditional IRAs are fully deductible.
+
+129
+00:09:42,000 --> 00:09:46,680
+They aren't. Because this
+taxpayer has an employer plan,
+
+130
+00:09:46,720 --> 00:09:51,252
+you absolutely must test
+the AGI phase-out limits.
+
+131
+00:09:51,292 --> 00:09:56,028
+If they had no employer plan whatsoever,
+they could take the full deduction,
+
+132
+00:09:56,068 --> 00:09:59,168
+completely regardless of their income level.
+
+133
+00:09:59,208 --> 00:10:02,710
+Finally, the number 59 and a half.
+
+134
+00:10:02,750 --> 00:10:04,992
+Burn this exact age into your memory.
+
+135
+00:10:05,032 --> 00:10:10,668
+It is the primary threshold for avoiding
+those nasty premature distribution penalties.
+
+136
+00:10:10,708 --> 00:10:13,918
+As you prepare, don't just
+memorize the dollar limits.
+
+137
+00:10:13,958 --> 00:10:15,138
+Master the logic.
+
+138
+00:10:15,178 --> 00:10:20,710
+Always ask yourself why one alternative
+gives a better after-tax result.
+
+139
+00:10:20,750 --> 00:10:26,418
+Are you ready to apply these exact
+rules on exam day to beat the CPA traps?
+
+140
+00:10:26,458 --> 00:10:31,324
+I know you are. Good luck with your
+practice questions, and keep at it.
