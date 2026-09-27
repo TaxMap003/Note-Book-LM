@@ -718,12 +718,15 @@
       "en": "So for a really high earner, a 4% municipal bond might actually give a much higher after-tax rate of return than a 6% corporate bond.",
       "parts": [
         {
-          "ar": "فبالنسبة لحد دخله عالي جداً، الـ municipal bond اللي بـ 4%",
-          "tts": "فبالنسبة لحد دخله عالي جداً، الـ municipal bond اللي بأربعة في المية"
+          "ar": "فبالنسبة لحد دخله عالي جداً،"
         },
         {
-          "ar": "ممكن فعلاً يدي after-tax rate of return أعلى بكتير من الـ corporate bond اللي بـ 6%.",
-          "tts": "ممكن فعلاً يدي after-tax rate of return أعلى بكتير من الـ corporate bond اللي بستة في المية."
+          "ar": "الـ municipal bond اللي بـ 4% ممكن فعلاً يدي after-tax rate of return أعلى بكتير",
+          "tts": "الـ municipal bond اللي بأربعة في المية ممكن فعلاً يدي after-tax rate of return أعلى بكتير"
+        },
+        {
+          "ar": "من الـ corporate bond اللي بـ 6%.",
+          "tts": "من الـ corporate bond اللي بستة في المية."
         }
       ]
     },
@@ -771,8 +774,8 @@
           "tts": "في الـ Section five twenty-nine plans، مفيش age limit صارم،"
         },
         {
-          "ar": "والـ unused funds عندها potential إنها تتعمل roll over لـ Roth IRA بعد 15 سنة،",
-          "tts": "والـ unused funds عندها potential إنها تتعمل roll over لـ Roth آي آر إيه بعد خمستاشر سنة،"
+          "ar": "والـ unused funds عندها potential إنها تتعمل roll over لحساب Roth IRA بعد 15 سنة،",
+          "tts": "والـ unused funds عندها potential إنها تتعمل roll over لحساب Roth آي آر إيه بعد خمستاشر سنة،"
         },
         {
           "ar": "ودي feature جامدة جداً."
@@ -802,7 +805,7 @@
       "parts": [
         {
           "ar": "وبعدين عندك الـ U.S. Series EE bonds،",
-          "tts": "وبعدين عندك الـ يو إس Series إي إي bonds،"
+          "tts": "وبعدين عندك الـ يو إس سيريز دابل إي بوندز،"
         },
         {
           "ar": "ودي بتبقى tax-exempt بس لو اتستخدمت في الـ qualified education expenses."
@@ -880,8 +883,8 @@
       "en": "But if an independent student owns it, FAFSA expects up to 20% to be used.",
       "parts": [
         {
-          "ar": "لكن لو الـ independent student هو اللي بيملكها، الـ FAFSA بتتوقع إن لحد 20% تتصرف.",
-          "tts": "لكن لو الـ independent student هو اللي بيملكها، الـ FAFSA بتتوقع إن لحد عشرين في المية تتصرف."
+          "ar": "لكن لو الـ independent student هو اللي بيملكها، الـ FAFSA بتتوقع إن لغاية 20% تتصرف.",
+          "tts": "لكن لو الـ independent student هو اللي بيملكها، الـ FAFSA بتتوقع إن لغاية عشرين في المية تتصرف."
         }
       ]
     },
@@ -1045,7 +1048,7 @@
       "parts": [
         {
           "ar": "الـ assets اللي عليها payable on death، أو POD، بتعدي الـ probate بالكامل.",
-          "tts": "الـ assets اللي عليها payable on death، أو بي أو دي، بتعدي الـ probate بالكامل."
+          "tts": "الـ assets اللي عليها payable on death، أو بي أو دي، بتعدي الـ بروبيت بالكامل."
         }
       ]
     },
@@ -1074,7 +1077,8 @@
           "ar": "بس خد بالك من الـ exam trap الكبيرة دي:"
         },
         {
-          "ar": "إنك تعدي الـ probate مش معناه إنك تعدي الـ taxes."
+          "ar": "إنك تعدي الـ probate مش معناه إنك تعدي الـ taxes.",
+          "tts": "إنك تعدي الـ بروبيت مش معناه إنك تعدي الـ taxes."
         }
       ]
     },
@@ -1085,7 +1089,8 @@
       "en": "Probate avoidance is not tax avoidance. The asset still remains firmly in the gross estate.",
       "parts": [
         {
-          "ar": "الـ probate avoidance مش tax avoidance."
+          "ar": "الـ probate avoidance مش tax avoidance.",
+          "tts": "الـ بروبيت avoidance مش tax avoidance."
         },
         {
           "ar": "الـ asset لسه موجود وثابت في الـ gross estate."

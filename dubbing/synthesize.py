@@ -129,6 +129,29 @@ class Synth:
             print(f"    retry: {len(wav) / SR:.1f}s for {len(text)} chars (ratio {ratio:.2f})")
         return best
 
+    def best(self, text: str, seed: int, takes: int) -> np.ndarray:
+        """Voice several takes and keep the one Whisper hears best (Arabic words + English terms)."""
+        from qa_tts import arabic_recall, norm_ar, term_recall
+        from scipy.signal import resample_poly
+
+        if getattr(self, "whisper", None) is None:
+            from faster_whisper import WhisperModel
+
+            self.whisper = WhisperModel(str(MODELS / "faster-whisper-large-v3"), device="cpu", compute_type="int8",
+                                        cpu_threads=self.args.threads)
+        best, best_score = None, -math.inf
+        for k in range(takes):
+            wav = self.part(text, seed + 7919 * k)
+            segments, _ = self.whisper.transcribe(resample_poly(wav, 2, 3).astype(np.float32), language="ar",
+                                                  beam_size=5, vad_filter=False)
+            heard = " ".join(s.text.strip() for s in segments)
+            ratio = len(norm_ar(heard)) / max(1, len(norm_ar(text)))
+            score = arabic_recall(text, heard) + term_recall(text, heard) - 2 * max(0.0, abs(math.log(max(ratio, 1e-3))) - math.log(1.25))
+            print(f"    take {k + 1}: score {score:.2f} heard: {heard}")
+            if score > best_score:
+                best, best_score = wav, score
+        return best
+
     def part(self, text: str, seed: int) -> np.ndarray:
         if self.args.code_switch == "mixed":
             return self.say(text, "ar", seed)
@@ -143,7 +166,8 @@ def unit_key(unit: dict, voice_files: list[Path], args) -> str:
     payload = {
         "parts": [p.get("tts") or p["ar"] for p in unit["parts"]],
         "voice": [f.name for f in voice_files],
-        "settings": [args.code_switch, args.temperature, args.repetition_penalty, args.top_p, args.speed, args.gpt_cond_len, args.seed],
+        "settings": [args.code_switch, args.temperature, args.repetition_penalty, args.top_p, args.speed, args.gpt_cond_len, args.seed,
+                     args.pick_best],
     }
     return hashlib.sha1(json.dumps(payload, ensure_ascii=False).encode()).hexdigest()[:16]
 
@@ -177,6 +201,7 @@ def main() -> None:
     ap.add_argument("--seed", type=int, default=1234)
     ap.add_argument("--threads", type=int, default=4)
     ap.add_argument("--only", help="comma-separated unit ids to (re)generate")
+    ap.add_argument("--pick-best", type=int, default=1, help="voice N takes per part and keep the one Whisper hears best")
     ap.add_argument("--pause", type=float, default=0.22, help="silence between parts (s)")
     ap.add_argument("--sentence-pause", type=float, default=0.38, help="silence after a part ending a sentence (s)")
     args = ap.parse_args()
@@ -208,7 +233,8 @@ def main() -> None:
         pieces, offsets, cursor = [], [], 0.0
         for j, part in enumerate(unit["parts"]):
             text = part.get("tts") or part["ar"]
-            audio = synth.part(text, args.seed + unit["id"] * 10 + j)
+            seed = args.seed + unit["id"] * 10 + j
+            audio = synth.best(text, seed, args.pick_best) if args.pick_best > 1 else synth.part(text, seed)
             offsets.append({"start": round(cursor, 3), "end": round(cursor + len(audio) / SR, 3)})
             pieces.append(audio)
             cursor += len(audio) / SR
